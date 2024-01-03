@@ -194,13 +194,13 @@ form input:focus {
 form button {
   height: 3rem;
   color: #fff;
-  background-color: #21c08b;
+  background-color: #26B786;
   font-size: 18px;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: #26B786;
+  background-color: #21c08b;
 }
 
 
