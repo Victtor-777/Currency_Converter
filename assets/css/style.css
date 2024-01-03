@@ -1,0 +1,217 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  /* 2FD69A */
+  --color: #26B786; 
+  --first-color: hsl(140, 40%, 48%);
+  --first-color-alt: hsl(140, 40%, 44%);
+  --title-color: hsl(140, 4%, 12%);
+  --text-color: hsl(0, 0%, 15%);
+  --text-color-light: hsl(140, 4%, 64%);
+  --white-color: hsl(0, 0%, 100%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(0, 0%, 95%);
+  --shadow-img: drop-shadow(0 8px 12px hsla(0, 0%, 0%, .2));
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --second-font: "Roboto", sans-serif;
+  --biggest-font-size: 3rem;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+
+/*=============== BASE ===============*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+}
+
+/*=============== MAIN ===============*/
+.wave {
+  position: fixed;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.wave2 {
+  position: fixed;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  bottom: 0;
+  rotate: 180deg;
+  z-index: -1;
+  /* display: none; */
+}
+
+.main__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100vw;
+  height: 100vh;
+  gap: 7rem;
+  padding: 3rem;
+}
+
+.main__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__img img {
+  width: 600px;
+}
+
+.main__converter {
+  /* order: -1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15rem;
+}
+
+.converter__wrapper {
+  background-color: white;
+  width: 400px;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
+}
+
+.converter__title {
+  font-size: var(--big-font-size);
+  font-weight: var(--font-medium);
+  text-align: center;
+}
+
+.converter__form {
+  margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: .3rem;
+}
+
+form p {
+  font-size: var(--h2-font-size);
+  margin-bottom: 5px;
+}
+
+form input {
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #999;
+}
+
+form input:focus {
+  padding: 0 14px;
+  border: 2px solid #26B786;
+}
+
+.converter__list {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.converter__list .select__box {
+  display: flex;
+  width: 120px;
+  height: 48px;
+}
+
+.select__box select {
+  width: auto;
+}
+
+
+
+@media screen and (max-width: 1340px) {
+  .main__converter {
+    margin-right: 0;
+  }
+  .main__img img {
+    width: 500px;
+  }
+  .converter__wrapper {
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .main__container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 0rem;
+  }
+  .wave2,
+  .main__img {
+    display: none;
+  }
+  .wave {
+    height: 100%;
+    width: 80%;
+    left: 0;
+    bottom: 0;
+  }
+  .main__converter {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wave {
+    height: 100%;
+    width: 110%;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__container{
+    gap: 1rem;
+    padding: 0rem;
+  }
+  .converter__wrapper {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .converter__wrapper {
+    width: 350px;
+  }
+}

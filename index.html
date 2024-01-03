@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== ICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>Conversor de Moedas</title>
+</head>
+<body>
+  <img class="wave" src="./assets/img/wave.png" alt="">
+  <img class="wave2" src="./assets/img/wave.png" alt="">
+  <main class="main__container">
+    <div class="main__img">
+      <img src="./assets/img/main_img1.svg" alt="">
+    </div>
+    <div class="main__converter">
+      <div class="converter__wrapper">
+        <h1 class="converter__title">Conversor <br> de Moedas</h1>
+        <form class="converter__form" action="#">
+          <div class="converter__amount">
+            <p>Digite um valor</p>
+            <input type="text" value="1">
+          </div>
+          <div class="converter__list">
+            <div class="converter__from">
+              <p>De</p>
+              <div class="select__box">
+                <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                <select name="" id="">
+                  <option value="USD">USD</option>
+                  <option value="BRL">BRL</option>
+                  <option value="INR">INR</option>
+                  <option value="PKR">PKR</option>
+                  <option value="MAD">MAD</option>
+                </select>
+              </div>                                
+            </div>
+
+            <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+
+            <div class="converter__to">
+              <p>Para</p>
+              <div class="select__box">
+                <img src="https://flagsapi.com/BR/flat/64.png" alt="flag">
+                <select name="" id="">
+                  <option value="BRL">BRL</option>
+                  <option value="USD">USD</option>
+                  <option value="INR">INR</option>
+                  <option value="PKR">PKR</option>
+                  <option value="MAD">MAD</option>
+                </select>
+              </div>                                
+            </div>
+          </div>
+          <div class="converter__rate">
+            1 USD = 5 BRL
+          </div>
+          <button>Converter</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="./assets/js/script.js"></script>
+  
+</body>
+</html>
