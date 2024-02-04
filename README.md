@@ -1,8 +1,8 @@
 <p>
-  <img src="./img/preview/preview.png" width="100%" />
+  <img src="./assets/img/preview.png" width="100%" />
 </p>
 
-# 🖼 Slide JS
+# 🖼 Conversor de Moedas
 Projeto de um site de vendas de bicicletas personalizadas. Nesse projeto eu aprendi bastante sobre sobre HTML e CSS, depois desse projeto e outras práticas aprimorei muito meu CSS.
 
 - Veja o projeto: [Live Preview](https://slide-javascript.vercel.app/)

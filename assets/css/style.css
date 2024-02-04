@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -20,8 +20,8 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -95,7 +95,7 @@ body {
   width: 400px;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.1);
 }
 
 .converter__title {
@@ -112,7 +112,7 @@ form :where(input, select, button) {
   width: 100%;
   outline: none;
   border: none;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 
 form p {
@@ -196,7 +196,6 @@ form button:hover {
   background-color: #12a172;
 }
 
-
 /*=============== BREAKPOINTS ===============*/
 @media screen and (max-width: 1340px) {
   .main__converter {
@@ -244,7 +243,7 @@ form button:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .main__container{
+  .main__container {
     gap: 0.5rem;
     padding: 0rem;
   }
